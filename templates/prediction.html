@@ -16,7 +16,7 @@
 
     <title>Fake News Detection</title>
   </head>
-  <body class="bg-stone-500">
+  <body class="bg-gray-200">
     <header class="text-gray-600 body-font -my-9">
       <div
         class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center"
@@ -45,7 +45,7 @@
         >
         <a href="/" class="mr-5 hover:text-gray-900">Home</a>
         <a class="mr-5 hover:text-gray-900">About Us</a>
-        <a href="/prediction" class="mr-5 hover:text-gray-900">Prediction</a>
+        <a href="/prediction" class="mr-5 hover:text-gray-900">Detection</a>
           <a class="mr-5 hover:text-gray-900">Contact Us</a>
         </nav>       
       </div>
@@ -64,11 +64,8 @@
           >
             Fake News Detection
           </h1>
-          <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
-            Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
-            gentrify, subway tile poke farm-to-table. Franzen you probably
-            haven't heard of them man bun deep jianbing selfies heirloom prism
-            food truck ugh squid celiac humblebrag.
+          <p class="lg:w-2/3 mx-auto text-black">
+            We have used the 2016 US president election datasets for creation of this system . 
             <br>
              <p class="text-primary"><b>{{prediction_text}}</b></p>
           </p>
@@ -77,8 +74,8 @@
         <div class="center">
           <form action="/prediction" method="POST">
             <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label"
-                >Enter News Headlines</label
+              <label for="exampleInputEmail1" class="form-label text-black"
+                >Enter a paragraph from News Article</label
               >
               <input
                 type="text"
@@ -87,11 +84,11 @@
                 aria-describedby="emailHelp"
               />
               <div id="emailHelp" class="form-text">
-                We'll never share your email with anyone else.
+                The accuracy for detection of fake-news is 94.17%
               </div>
             </div>            
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">Submit</button>
           </form>
         </div>
       </div>
